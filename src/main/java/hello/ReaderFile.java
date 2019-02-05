@@ -20,6 +20,7 @@ public class ReaderFile {
     private static List<String> outputById = new ArrayList<>();
 
     //the method readData extract the information line by line, deciding, according to the argument, the processing of the information that must be done
+
     public static void readData(String path, String argument, String searchCriteria) throws IOException {
         File file = new File(path);
 
