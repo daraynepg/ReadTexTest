@@ -9,18 +9,18 @@ import java.io.IOException;
 public class App {
     public static void main(String[] args) throws IOException {
         ReaderFile readerFile = new ReaderFile();
-        readerFile.readData("D:\\data.txt", "CITY", "LAS VEGAS");
+        readerFile.readData("D:\\data.txt", "ID", "LAS VEGAS");
         if (args.length == 3) {
             String fileName = args[0];
             String argument = args[1].toUpperCase();
             String searchCriteria = args[2].toUpperCase();
 
-            File file = new File(fileName);
-
-            if (file.exists())
-                readerFile.readData("D:\\data.txt", "ID", "54315871Z");
-            else
-                System.out.println("Please, you must provide a valid file to process!");
+           // File file = new File(fileName);
+//
+//            if (file.exists())
+//                readerFile.readData("D:\\data.txt", "CITY", "54315871Z");
+//            else
+//                System.out.println("Please, you must provide a valid file to process!");
 
         } else {
             System.out.println("Please, you must enter all the necessary arguments!");
